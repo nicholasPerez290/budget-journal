@@ -49,7 +49,7 @@ function checkDatabase() {
             const currentStore = transaction.objectStore('BudgetData');
 
             currentStore.clear();
-            console.log('Clearing store 🧹');
+            console.log('Clearing store');
           }
         });
     }
@@ -75,3 +75,4 @@ const saveRecord = (record) => {
 };
 
 window.addEventListener('online', checkDatabase);
+
